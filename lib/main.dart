@@ -14,10 +14,12 @@ class MyApp extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
+              // This section of code creates the avatar
               CircleAvatar(
                 radius: 80.0,
                 backgroundImage: AssetImage('images/itsame.jpeg'),
               ),
+              // Section for my name
               Text(
                 'Dwayne Belcon',
                 style: TextStyle(
@@ -26,6 +28,7 @@ class MyApp extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                     fontFamily: 'Pacifico'),
               ),
+              //Section for my title
               Text(
                 'FULL STACK DEVELOPER',
                 style: TextStyle(
@@ -35,6 +38,7 @@ class MyApp extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                     fontFamily: 'Tomorrow'),
               ),
+              // This creates a horizontal rule
               SizedBox(
                 height: 10.0,
                 width: 200.0,
@@ -42,6 +46,7 @@ class MyApp extends StatelessWidget {
                   color: Colors.white,
                 ),
               ),
+              // Card sections
               Card(
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
                 child: Padding(
